@@ -9,7 +9,7 @@ markdown: kramdown
 |---|---|---|
 |Chromium OS|Linux|
 |Git|Lubuntu Desktop|
-|GitLab|PowerShell|
+|GitLab|[PowerShell](http://axis.bestul.us/powershell.md)|
 |GNUGpg|Python|
 |Gradle|VMware ESXI|
 
