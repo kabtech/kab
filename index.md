@@ -1,6 +1,7 @@
 ---
 layout: default
 title: kabtech
+markdown: kramdown
 ---
 
 ### Code Snippets, Command Line, and Configuration Tips
