@@ -14,5 +14,9 @@ markdown: kramdown
 |Gradle|VMware ESXI|
 
 ### Reference Sheets
+|---|---|
+|ASCII|Linux Passwd|
+|HTML5|TLS|
+|Java||
 
 ### Build/Deploy Narratives
