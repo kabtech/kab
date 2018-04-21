@@ -1,14 +1,3 @@
----
-layout: default
----
-
-## Top Level Directory
-- Code Snippets and Command Line Collection
-- Reference Sheets Collection
-- Build/Deploy Narratives Collection
-
----
-
 You can use the [editor on GitHub](https://github.com/kabtech/kabCentral/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
