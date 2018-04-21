@@ -13,8 +13,6 @@ markdown: kramdown
 |GNUGpg|Python|
 |Gradle|VMware ESXI|
 
----
 ### Reference Sheets
 
----
 ### Build/Deploy Narratives
