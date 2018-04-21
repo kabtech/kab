@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: default
 markdown: kramdown
 ---
 [RETURN TO axis >>](http://axis.bestul.us)
