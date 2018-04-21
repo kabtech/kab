@@ -1,7 +1,6 @@
 ---
 layout: default
 title: axis
-markdown: kramdown
 ---
 
 [RETURN TO axis >>](http://axis.bestul.us)
