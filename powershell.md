@@ -1,6 +1,5 @@
 ---
-layout: default
-title: axis
+title: powershell
 ---
 
 [RETURN TO axis >>](http://axis.bestul.us)
