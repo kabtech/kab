@@ -4,8 +4,25 @@ title: kabtech
 ---
 
 ## Top Level Directory
-- Code Snippets and Command Line Collection
+- Code Snippets, Command Line, and Configuration Tips Collection
 - Reference Sheets Collection
 - Build/Deploy Narratives Collection
 
 ---
+### Code Snippets, Command Line, and Configuration Tips
+- Chromium OS
+- Git
+- GitLab
+- GNUGpg
+- Gradle
+- Linux
+- Lubuntu Desktop
+- PowerShell
+- Python
+- VMware ESXI
+
+---
+### Reference Sheets
+
+---
+### Build/Deploy Narratives
