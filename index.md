@@ -1,7 +1,6 @@
 ---
 layout: default
 title: axis
-markdown: kramdown
 ---
 
 ### Code Snippets, Command Line, and Configuration Tips
