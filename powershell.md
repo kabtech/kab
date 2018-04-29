@@ -1,8 +1,6 @@
 ---
-layout: default
+layout: kab
 ---
-[RETURN TO axis >>](http://axis.bestul.us)
-
 ## PowerShell
 
 #### Setup an array-input construct which awaits pasted list to populate the array
