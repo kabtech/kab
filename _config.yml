@@ -1,15 +1,7 @@
 # Site settings
-title: axis
-tagline: "An axis of things inconsequential"
-url: "http://axis.bestul.us/" # The base hostname & protocol for your site. Use it if you need absolute URL's
-
-# Social
-socialimg: /img/social.jpg # be sure to change this image
-facebook: fbusername
-twitter: twusername
-github: ghusername
-googleplus: gusername
-instagram: igusername
+title: kab
+tagline: "Reference library of a reclusive technophile"
+url: "http://kab.bestul.us/" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Contact
 phone: "" # This is my real number. You should text me.
