@@ -1,7 +1,7 @@
 # Site settings
 title: axis
 tagline: "one technophile's place to store things not committed to memory"
-url: "http://axis.bestul.us" # The base hostname & protocol for your site. Use it if you need absolute URL's
+url: "http://axis.bestul.us/" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
