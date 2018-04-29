@@ -2,7 +2,7 @@
 layout: kab
 ---
 
-### Code Snippets, Command Line, and Configuration Tips
+### Code Snippets, Command Shell Snippets, and Configuration Tips
 
 |---|---|---|
 |Chromium OS|Linux|
