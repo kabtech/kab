@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+
+body{
+	font-family:sans-serif;
+}
+
+table{
+    align: left;
+    border: 0px;
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+/*CLASSES*/
+.navNormal {
+    text-decoration:none;
+    color:#000000;
+    font-size: 1.0em;
+}
+.navHighlight {
+    text-decoration:none;
+    color:#FFFFFF;
+    font-size: 1.0em;
+}
+.sectionStandard{
+    color:#000000;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 5px 40px 5px 40px;
+}
+.sectionParagraph{
+    font-family:sans-serif;
+    font-size: 1.0em;
+    margin: 10px 10px 10px 20px;
+    text-align:left;
+}
+.homeImg {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+}
+.leftImg {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0px 10px 4px 0px;
+}
+.rightImg {
+    max-width: 40%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    float:right;
+}
+
+.likesListPadding {
+	padding-left:20px;
+}
+
+/*ID BASED STYLE */
+/* margin and padding orders top right bottom left */
+#headerDiv{
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+#footerDiv{
+    font-size: 1.0em;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    bottom: 0px;
+}
+
+
+
