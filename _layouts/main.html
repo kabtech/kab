@@ -20,7 +20,8 @@
 <hr/>
 </div>
 <div id="content">
-<div id="thelist"> 
+<div id="ccc"> 
+    <p class="sectionHeader">Code Snippets, Command Shell Snippets, and Configuration Tips</p>
     <ul>
       {% assign items = site.pages | sort: 'title' %}
       {% for p in items %}
@@ -31,7 +32,33 @@
         {% endif %}
       {% endfor %}
     </ul>
-</div> 
+</div>
+<div id="rs"> 
+    <p class="sectionHeader">Reference Sheets</p>
+    <ul>
+      {% assign items = site.pages | sort: 'title' %}
+      {% for p in items %}
+        {% if p.group == "rs" %}
+        <li>
+          <a href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>
+<div id="bdn"> 
+    <p class="sectionHeader">Build/Deploy Narratives</p>
+    <ul>
+      {% assign items = site.pages | sort: 'title' %}
+      {% for p in items %}
+        {% if p.group == "bdn" %}
+        <li>
+          <a href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>
 </div>
 <div id="footerDiv">
 <hr/>
