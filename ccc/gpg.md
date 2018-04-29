@@ -1,4 +1,0 @@
----
-layout: kab
-tag: ccc
----
