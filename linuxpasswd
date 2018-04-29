@@ -1,7 +1,7 @@
 ---
 layout: kab
-title: OpenSSH
-group: ccc
+title: Linux passwd
+group: rs
 ---
 ### The Linux passwd file
 
