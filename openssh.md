@@ -1,5 +1,5 @@
 ---
 layout: kab
-title: Aopenssh
+title: OpenSSH
 group: ccc
 ---
