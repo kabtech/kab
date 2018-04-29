@@ -1,6 +1,5 @@
 ---
-layout: default
-title: axis
+layout: kab
 ---
 
 ### Code Snippets, Command Line, and Configuration Tips
