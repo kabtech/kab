@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="/favicon.ico" type="image/x-icon">
+<title>KAB</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div id="headerDiv">
+<table>
+<tr>
+<td><img src="./img/kab_logo_100.png" alt="insignia" style="width:60px;height:60px;"></td>
+<td width="8px"><td>
+<td>{{ site.tagline }}
+<hr/>
+<a id="navTechRef" href="{{ site.url }}" class="navNormal">TechRef</a> | <a id="navLifeHacks" href="lifehacks" class="navNormal">LifeHacks</a> | <a id="navRecommended" href="recommended" class="navNormal">Recommended</a> | <a id="navAbout" href="about" class="navNormal">About</a>
+</td>
+</tr>
+</table>
+<hr/>
+</div>
+<div id="content">
+{{content}}
+</div>
+<div id="footerDiv">
+<hr/>
+&copy;2018 kab | kab@bestul.us
+</div>
+</body>
+</html>
