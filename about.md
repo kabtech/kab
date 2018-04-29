@@ -10,6 +10,8 @@ The site is hosted on [GitHub pages](https://pages.github.com/) and uses a visua
 
 
 > When we meet arete in Plato, we translate it 'virtue' and consequently miss all the flavour of it. 'Virtue', at least in modern English, is almost entirely a moral work; arete, on the other hand, is used indifferently in all categories, and simply means excellence.
+
 > Arete implies a respect for the wholeness or oneness of life, and a consequent dislike of specialization. It implies a contempt for efficiency -- or rather a much higher idea of efficiency, an efficiency which exists not in one department of life but in life itself.
+
 > The Greeks, H.D.F. Kitto
 
