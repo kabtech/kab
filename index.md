@@ -1,5 +1,5 @@
 ---
-layout: kab
+layout: main
 ---
 
 ### Code Snippets, Command Shell Snippets, and Configuration Tips
