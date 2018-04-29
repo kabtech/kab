@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>axis</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div id="headerDiv">
+<table>
+<tr>
+<td><img src="./img/kab_logo_100.png" alt="insignia" style="width:60px;height:60px;"></td>
+<td width="8px"><td>
+<td>{{ site.tagline }}
+<hr/>
+<a id="navHome" href="{{ site.url }}" class="navNormal">HOME</a> | <a id="navAbout" href="zzz" class="navNormal">ABOUT</a> | <a id="navContact" href="zzz" class="navNormal">WATCHING</a>
+</td>
+</tr>
+</table>
+<hr/>
+</div>
+<div id="content">
+{{site.pages}}
+</div>
+<div id="footerDiv">
+<hr/>
+&copy;2018 kabtech
+</div>
+</body>
+</html>
+
