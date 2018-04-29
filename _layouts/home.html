@@ -24,9 +24,11 @@
 <div id="thelist"> 
     <ul>
       {% for p in site.pages %}
+        {% if group == "ccc" %}
         <li>
           <a href="{{ p.url }}">{{ p.title }}</a>
         </li>
+        {% endif %}
       {% endfor %}
     </ul>
 </div>  
