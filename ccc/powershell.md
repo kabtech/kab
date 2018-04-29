@@ -1,2 +1,4 @@
 ---
+layout: kab
+tag: ccc
 ---
