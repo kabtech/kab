@@ -5,7 +5,7 @@ group: rs
 ---
 ### The Linux passwd file
 
-![alt passwd file construct](/img/img_linux_passwd.png =500x)
+![alt passwd file construct](./img/img_linux_passwd.png =500x)
 ```
 1.Username: It is used when user logs in. It should be between 1 and 32 characters in length.
 2.Password: An x character indicates that encrypted password is stored in /etc/shadow file.
