@@ -1,5 +1,6 @@
 ---
 layout: main
+title: TechRef
 ---
 
 ### Code Snippets, Command Shell Snippets, and Configuration Tips
