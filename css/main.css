@@ -64,8 +64,8 @@ table{
     float:right;
 }
 
-.likesListPadding {
-	padding-left:20px;
+.headerHR {
+    padding: 0px;
 }
 
 /*ID BASED STYLE */
