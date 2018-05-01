@@ -14,13 +14,14 @@ table{
 }
 
 pre {
-	width: 100%;
-	padding: 6px;
-	margin: 0;
-	overflow: auto;
-	overflow-y: hidden;
-	background: #efefef;
-	border: 0px;
+    width: 100%;
+    padding: 6px;
+    margin: 0;
+    overflow: auto;
+    overflow-y: hidden;
+    background: #efefef;
+    border: 0px;
+}
 
 /*CLASSES*/
 .navNormal {
