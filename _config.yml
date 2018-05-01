@@ -1,11 +1,7 @@
 # Site settings
 title: kab
-tagline: "Reference library of a low-profile technophile"
+tagline: "Reference library of a contemplative technophile"
 url: "http://kab.bestul.us/" # The base hostname & protocol for your site. Use it if you need absolute URL's
-
-# Contact
-phone: "" # This is my real number. You should text me.
-email: "kab@bestul.us" # This is my real email address. Please don't email me.
 
 # Use this for production
 #sass:
