@@ -11,6 +11,7 @@ The site is hosted on [GitHub pages](https://pages.github.com/) and uses a visua
 <br/>
 <br/>
 <br/>
+
 ---
 
 > *When we meet aret&#234; in Plato, we translate it 'virtue' and consequently miss all the flavour of it. 'Virtue', at least in modern English, is almost entirely a moral word; aret&#234;, on the other hand, is used indifferently in all categories, and simply means excellence.  
