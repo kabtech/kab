@@ -4,7 +4,7 @@ title: GNU gpg
 group: ccc
 ---
 
-###GNU gpg
+### GNU gpg
 
 <br/>
 <br/>
