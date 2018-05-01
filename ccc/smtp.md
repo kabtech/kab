@@ -1,3 +1,9 @@
+---
+layout: kab
+title: SMTP
+group: ccc
+---
+
 ### SMTP
 
 Send email using python smtplib:
