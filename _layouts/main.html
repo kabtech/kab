@@ -59,6 +59,20 @@
       {% endfor %}
     </ul>
 </div>
+
+<div id="atos"> 
+    <p class="sectionHeader">ATOS (all the other stuff)</p>
+    <ul>
+      {% assign items = site.pages | sort: 'title' %}
+      {% for p in items %}
+        {% if p.group == "atos" %}
+        <li>
+          <a href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>
 </div>
 <div id="footerDiv">
 <hr/>
