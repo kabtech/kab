@@ -6,11 +6,11 @@ title: Storage Mounts Integration
 
 ### Storage Mounts Integration
 
-http://lifeofageekadmin.com/mount-access-nfs-exports-windows-server-2012-r2/
-https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-server-config-exports.html
-https://unix.stackexchange.com/questions/116971/nfs-server-changes-in-etc-exports-file-need-service-restart
-https://maprdocs.mapr.com/51/DevelopmentGuide/c-mounting-nfs-on-a-windows-client.html
-http://blog.cuongnv.com/2009/11/windows-7-client-for-nfs-and-user-name.html
+http://lifeofageekadmin.com/mount-access-nfs-exports-windows-server-2012-r2/  
+https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-server-config-exports.html  
+https://unix.stackexchange.com/questions/116971/nfs-server-changes-in-etc-exports-file-need-service-restart  
+https://maprdocs.mapr.com/51/DevelopmentGuide/c-mounting-nfs-on-a-windows-client.html  
+http://blog.cuongnv.com/2009/11/windows-7-client-for-nfs-and-user-name.html  
 
 ```
 Use windows add/remove features to enable 'services for nfs' -- you want both 'administrative tools' and 'client'
