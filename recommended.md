@@ -18,3 +18,12 @@ Still a free download which can be installed on numerous recent-model business-c
 
 Turnkey GNU/Linux is a free Debian based library of system images that pre-integrates and polishes the best free software components into secure, easy to use solutions. This site runs on the Turnkey Core/MoinMoin wiki engine image.
 
+----
+#### [Project Fi](https://fi.google.com/about/) | high-value / high function mobile plan
+
+Google Project Fi is a network-of-networks mobile plan with extremely competitive pricing, exceptional coverage, and a group model that provides further  savings. Another extraordinary bonus is the international coverage: members enjoy coverage in 170+ countries; my family has put this to the test -- pretty nice when your mobile plan is welcoming you to another nation before you have even disembarked the plane. Moreover, their customer service has been consistently timely and effective. Go Fi!
+
+<br/>
+<br/>
+
+
