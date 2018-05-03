@@ -25,7 +25,7 @@ Convert source openssh public key file kab3.pub to IETF SECSH format. conversion
 ```
 ssh-keygen.exe -e -f kab3.pub
 ```
-* if the key is generated with a passphrase, the passphrase will be requested by the client when you go to login
+If the key is generated with a passphrase, the passphrase will be requested by the client when you go to login
 
 List the fingerprint of a previously-generated private or public key:
 ```
@@ -41,7 +41,7 @@ ssh-keygen -E sha1 -lf keyfilepath
 
 Regarding RoboFTP SSH key support
 
-* the key export function exports keys in the openSSH format * in many cases you will need to export to IETF format to make importable
+The key export function exports keys in the openSSH format * in many cases you will need to export to IETF format to make importable
 
 https://wiki.archlinux.org/index.php/SSH_Keys SSH keys always come in pairs, one private and the other public. The private key is known only to you and it should be safely guarded. By contrast, the public key can be shared freely with any SSH server to which you would like to connect.
 
