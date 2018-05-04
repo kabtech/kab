@@ -10,17 +10,31 @@ NOTE: The server can be configured for just key based authentication OR for key 
 
 If installed on Win7, executables will likely be located at 'C:\Program Files (x86)\OpenSSH\bin'; open the command shell, navigate to the bin directory and run desired exe's.
 
-Show a server's host key fingerprint:
+#### Show a server's host key fingerprint:
 ```
 ssh-keygen -E md5 -lf <(ssh-keyscan hostname 2>/dev/null)
 #the -E is used to specify the hash algorithm
 ```
 
-Generate new key, where you will be asked for filename. will be written to openssh bin directory and both the private and public key will be created, where the public key will have a .pub extension
+#### Generate new key
+
+...where you will be asked for filename. It will be written to openssh bin directory and both the private and public key will be created, where the public key will have a .pub extension
 ```
 ssh-keygen -t rsa -b 2048 -C "keyname" -N c048abd94184ef9172f8fe507b06de65
+# leave off the passphrase if you don't want the key to have one
+# you will be prompted with a default location the key files will be written, and the option to specify the path.
+# 2 files will be created: the private key file and the public one.
 ```
-Convert source openssh public key file kab3.pub to IETF SECSH format. conversion will be printed to screen and will need to be pasted into text file. Note that you do not have to keep the  comment section of the key.
+#### Setup client and server for key based user authentication
+```
+# Client (SSH, SCP, or SFTP) needs to be configured to use the private key for authentication (method depends on client).
+# On server, public key needs to be appended to the file /home/<username>/.ssh/authorized_keys
+
+```
+
+#### Convert source openssh public key file kab3.pub to IETF SECSH format
+
+Conversion will be printed to screen and will need to be pasted into text file. Note that you do not have to keep the  comment section of the key.
 
 ```
 ssh-keygen.exe -e -f kab3.pub
