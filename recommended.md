@@ -26,7 +26,7 @@ Google Project Fi is a network-of-networks mobile plan with extremely competitiv
 ----
 #### [Science360 Radio](https://nsf.gov/news/special_reports/apps/360_radio.jsp) | 24x7 stream of exceptional STEM podcasts
 
-A great service of the NSF. What is happening in science is almost always encouraging and very often just amazing. This is a great audio companion.
+A noteworthy service of the NSF. What is happening in science is almost always encouraging and very often just amazing. This is a great audio companion.
 
 
 <br/>
