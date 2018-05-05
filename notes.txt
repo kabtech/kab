@@ -14,3 +14,30 @@ https://devhints.io/jekyll
 https://jekyllrb.com/docs/frontmatter/
 https://jekyllrb.com/docs/variables/
 https://jekyllrb.com/docs/templates/
+
+
+  # Obtain password and convert to securestring
+  $encPassword = $(get-password) | ConvertTo-SecureString -AsPlainText -Force
+  # Derive strSamaccountName and strDescription for environment and assign to strings
+  $strSamaccountName = $strAccountNamePreEnvironmentSubstring + $_.key
+  $strDescription = $strServiceAccountDescription + " - " + $_.value
+  # Attempt actual object creation
+  try
+  {
+    #NOTE: the '-whatif' switch is set so that object is not actually created
+    $objNewUserObject = new-aduser -name $strSamaccountName -samaccountname $strSamaccountName -description $strDescription -accountpassword $encPassword -path $strADOrganizationalUnit -otherattributes @{info="$strAssociatedFeatureOrStory"} -passthru -confirm:$false -whatif -verbose
+    write-host "Success | use desired attribute(s) of objNewUserObject to construct return value"
+  }
+  catch{write-host "Failure | handle error here~~~~~~~~~~~~~~~~~~"}
+
+
+
+
+
+
+
+
+
+
+
+
