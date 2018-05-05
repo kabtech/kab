@@ -1,6 +1,6 @@
 ---
 layout: kab
-title: Deploy Sandbox Active Directory Domain Controller
+title: Sandbox Active Directory Domain Controller
 group: bdn
 ---
 
@@ -14,12 +14,16 @@ NOTE that I am creating the root Active Directory domain beta.fubar.local.
 - Spin up virtual machine and do clean install of Windows Server 2008 R2 (or whatever Windows Server version is appropriate for your project).
 - Apply patches to get it current (often an epic test of your patience and determination).
 - Do yourself a favor: snapshot your pristine server install so you can return to this happy place
-- run `dcpromo` and follow wizard to conclusion
-- restart server
+- Run `dcpromo` and follow wizard to conclusion. Here are a few pointers:
+    - when prompted 'Choose a Deployment Configuration', select 'creat a new domain in a new forest'
+    - you will be prompted for the AD functional level of your domain and forest -- make sure to choose the level that matches the use case you are prototyping
+    - for 'Additional Domain Options', be sure to click the radio button for a DNS server
+    - there will be a confirmation dialog box to confirm you want the DNS server -- click 'Yes'
+- Restart server
 
 #### If you need a self-signed cert to bind to LDAPS
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+CONTENT PENDING. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 #### Add some fake users
 
@@ -27,11 +31,11 @@ I used the [RANDOM USER GENERATOR](https://randomuser.me/) API with the call bel
 ```
 https://randomuser.me/api/?results=20&nat=us&inc=name,email,&format=csv&noinfo
 ```
-I saved the above fake user output file to `C:\admin\data\users.txt` on the domain controller.
+I saved the above fake user output file (returned by the above API call) to `C:\admin\data\users.txt` on the domain controller.
 
 On the domain controller I launched PowerShell and ran the command `set-executionpolicy remotesigned` to enable me to run locally written scripts.
 
-The I deployed the following script on the domain controller and ran it as administrator:
+The I saved the following PowerShell script on the domain controller (call it usergenerator.ps1 if you like) and then ran it as administrator:
 ```
 import-module activedirectory
 
@@ -68,7 +72,6 @@ get-content "C:\admin\data\users.txt"|foreach{
 
 }
 ```
-
 
 <br/>
 <br/>
