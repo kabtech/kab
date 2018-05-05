@@ -22,3 +22,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 #### Add some fake users
 
+I used the [RANDOM USER GENERATOR](https://randomuser.me/) API with the call below to get a comma delimited list of 20 users. 
+```
+https://randomuser.me/api/?results=20&nat=us&inc=name,email,&format=csv&noinfo
+```
+
+<br/>
+<br/>
