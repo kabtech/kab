@@ -53,24 +53,27 @@ function Get-Password()
   return $strCombined
 }
 
-$strADOrganizationalUnit = "OU=Employee,OU=Users,OU=_fubar,DC=beta,DC=fubar,DC=local"
+$strADOrganizationalUnit = "OU=Employee,OU=Users,OU=_flagstone,DC=beta,DC=flagstone,DC=local"
+$strDomain = "beta.flagstone.local"
 
-get-content "C:\admin\data\users.txt"|foreach{
+get-content "C:\admin\data\users_employee.txt"|foreach{
   $arrLine = $_.split(",")
   $strSamaccountname = $arrLine[1].substring(0,1) + $arrLine[2]
   if($strSamaccountname.length -gt 20){$strSamaccountname = $strSamaccountname.substring(0,20)}
   $strGivenname = [string]($arrLine[1])
   $strSurname = [string]($arrLine[2])
   $strEmail = [string]($arrLine[3])
+  $strUPN = $strSamaccountname + '@' + $strDomain
   # Obtain password and convert to securestring
   $encPassword = $(get-password) | ConvertTo-SecureString -AsPlainText -Force
   # Attempt actual object creation
-  new-aduser -name $strSamaccountName -givenname $strGivenname -surname $strSurname -samaccountname $strSamaccountName -accountpassword $encPassword -path $strADOrganizationalUnit -otherattributes @{mail="$strEmail"} -enabled:$true -passthru -confirm:$false -verbose
+  new-aduser -name $strSamaccountName -UserPrincipalName $strUPN -givenname $strGivenname -surname $strSurname -samaccountname $strSamaccountName -accountpassword $encPassword -path $strADOrganizationalUnit -otherattributes @{mail="$strEmail"} -enabled:$true -passthru -confirm:$false -verbose
   write-host "sleep 1 ========================"
   start-sleep -seconds 1
-  clear-variable arrLine,strSamaccountname,strGivenname,strSurname,strEmail,encPassword
+  clear-variable arrLine,strSamaccountname,strGivenname,strSurname,strEmail,strUPN,encPassword
 
 }
+
 ```
 
 <br/>
