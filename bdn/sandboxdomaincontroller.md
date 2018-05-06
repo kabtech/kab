@@ -53,8 +53,8 @@ function Get-Password()
   return $strCombined
 }
 
-$strADOrganizationalUnit = "OU=Employee,OU=Users,OU=_flagstone,DC=beta,DC=flagstone,DC=local"
-$strDomain = "beta.flagstone.local"
+$strADOrganizationalUnit = "OU=Employee,OU=Users,OU=_fubar,DC=beta,DC=fubar,DC=local"
+$strDomain = "beta.fubar.local"
 
 get-content "C:\admin\data\users_employee.txt"|foreach{
   $arrLine = $_.split(",")
