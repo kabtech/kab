@@ -11,6 +11,11 @@ title: Active Directory
 As a cautious first step before deleting an AD user object, you may be in the habit of disabling it for a period of time first. There is no equivalent for AD security groups, but there is a reasonable alternative:  
 change the group type to 'Distribution'. Doing so leaves the group's SID and GUID in place, but eliminates the security authorization functionality of the group.
 
+#### Use dsacls to modify permission of one user to one attribute
+```
+# here we are giving the user auth to change his own gidNumber attribute
+dsacls "\\beta.fubar.com\CN=Blanston\, Gern,OU=Test,OU=BetaUsers,OU=_Beta,DC=beta,DC=fubar,DC=com" /G beta\gblanston:RPWP;gidNumber;
+```
 
 
 <br/>
