@@ -10,6 +10,9 @@ group: ccc
 ```
 gpg --homedir /home/fubar/gpgkeytest --gen-key
 # A dialog will walk you through the remaining inputs 
+#If the process seems to hang during the 'gaining entropy phase', open another shell and run this command until the process completes:
+dd if=/dev/sda of=/dev/zero
+#(this command reads from your hard drive and discards the output, because writing to /dev/zero will does nothing.)
 ```
 #### List all keys in the keystore:
 ```
