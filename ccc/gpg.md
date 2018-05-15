@@ -16,6 +16,8 @@ dd if=/dev/sda of=/dev/zero
 
 #use expert mode to obtain more control over key construct:
 gpg --homedir /home/fubar/gpgkeytestalt --expert --gen-key
+#the ubuntu/debian variation
+gpg --homedir /home/fubar/gpgtesting --expert --full-gen-key
 ```
 #### List all keys in the keystore:
 ```
