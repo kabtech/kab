@@ -13,6 +13,9 @@ gpg --homedir /home/fubar/gpgkeytest --gen-key
 #If the process seems to hang during the 'gaining entropy phase', open another shell and run this command until the process completes:
 dd if=/dev/sda of=/dev/zero
 #(this command reads from your hard drive and discards the output, because writing to /dev/zero will does nothing.)
+
+#use expert mode to obtain more control over key construct:
+gpg --homedir /home/fubar/gpgkeytestalt --expert --gen-key
 ```
 #### List all keys in the keystore:
 ```
