@@ -3,8 +3,9 @@ title: kab
 tagline: "One technophile's reference library"
 url: "http://kab.bestul.us/" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
-# Use this for production
-#sass:
-#    style: compressed
+analytics:
+    provider: "google-universal"
+    google:
+        tracking_id: "UA-119497947-1"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
