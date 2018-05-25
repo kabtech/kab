@@ -1,8 +1,9 @@
 ---
 layout: kab
 group: ccc
-title: Linux Server How To
+title: Linux Admin
 ---
+### Linux admin goto commands
 
 Add a user to a group
 ```
@@ -152,8 +153,9 @@ Also stored in days, describing when the account was expired (from epoch date).
 Usually not used by Linux distributions
 ```
 Restart server
+```
 shutdown -r now
-
+```
 Show all local file systems
 ```
 cat /etc/fstab
