@@ -1,7 +1,7 @@
 ---
 layout: kab
 group: ccc
-title: VMware ESXI
+title: VMware ESXi
 ---
 ### VMware ESXi
 
