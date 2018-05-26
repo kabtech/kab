@@ -86,6 +86,9 @@ pre {
   -webkit-column-width: 200px;
      -moz-column-width: 200px;
           column-width: 200px;
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
 }
 
 /*ID BASED STYLE */
