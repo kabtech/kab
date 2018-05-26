@@ -46,7 +46,7 @@
 </div>
 <div id="content">
 <div id="ccc"> 
-  <p class="sectionHeader">Code Snippets, Command Shell Snippets, and Configuration Tips</p>
+  <p class="sectionHeader">Code Snippets, Command Shell Snippets, and Configuration Tips<br/></p>
   <div class="dynColumns">
     {% assign items = site.pages | sort: 'title' %}
     {% for p in items %}
@@ -58,17 +58,15 @@
   <br/>
 </div>
 <div id="rs"> 
-    <p class="sectionHeader">Reference Sheets</p>
-    <ul>
-      {% assign items = site.pages | sort: 'title' %}
-      {% for p in items %}
-        {% if p.group == "rs" %}
-        <li>
-          <a href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+  <p class="sectionHeader">Reference Sheets<br/></p>
+  <div class="dynColumns">
+    {% assign items = site.pages | sort: 'title' %}
+    {% for p in items %}
+      {% if p.group == "rs" %}
+        <div><a href="{{ p.url }}">{{ p.title }}</a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 <div id="bdn"> 
     <p class="sectionHeader">Build/Deploy Narratives</p>
