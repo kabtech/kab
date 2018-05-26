@@ -79,6 +79,15 @@ pre {
     margin: 0px 0px 0px 0px;
 }
 
+.dynColumns {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-width: 200px;
+     -moz-column-width: 200px;
+          column-width: 200px;
+}
+
 /*ID BASED STYLE */
 /* margin and padding orders top right bottom left */
 #headerDiv{
@@ -94,12 +103,5 @@ pre {
     bottom: 0px;
 }
 
-#dyncolumnsDiv {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-width: 200px;
-     -moz-column-width: 200px;
-          column-width: 200px;
-}
+
 
