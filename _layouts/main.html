@@ -72,31 +72,31 @@
   <br/>
 </div>
 <div id="bdn"> 
-    <p class="sectionHeader">Build/Deploy Narratives</p>
-    <ul>
-      {% assign items = site.pages | sort: 'title' %}
-      {% for p in items %}
-        {% if p.group == "bdn" %}
-        <li>
-          <a href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+  <p class="sectionHeader">Build/Deploy Narratives</p>
+  <br/>
+  <div class="dynColumns">
+    {% assign items = site.pages | sort: 'title' %}
+    {% for p in items %}
+      {% if p.group == "bdn" %}
+        <div><a href="{{ p.url }}">{{ p.title }}</a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <br/>
 </div>
 
 <div id="atos"> 
-    <p class="sectionHeader">ATOS (all the other stuff)</p>
-    <ul>
-      {% assign items = site.pages | sort: 'title' %}
-      {% for p in items %}
-        {% if p.group == "atos" %}
-        <li>
-          <a href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+  <p class="sectionHeader">ATOS (all the other stuff)</p>
+  <br/>
+  <div class="dynColumns">
+    {% assign items = site.pages | sort: 'title' %}
+    {% for p in items %}
+      {% if p.group == "atos" %}
+        <div><a href="{{ p.url }}">{{ p.title }}</a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <br/>
 </div>
 </div>
 <div id="footerDiv">
