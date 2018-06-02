@@ -11,16 +11,17 @@ The data classification system is based on the principle of least privilege. Thi
 |---|---|---|---|
 |Information Classification Guideline|Information is not confidential and can be made public without any implications for Company. Loss of availability due to system downtime is an acceptable risk. Integrity is important but not vital.|Unauthorized access could influence the Company's operational effectiveness, cause meaningful financial loss, provide a significant gain to a competitor, or cause a substantial reduction in customer confidence.|Information which by regulation or contractual obligation must be secured from unauthorized exposure or only exposed upon obtaining written authorization.|
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
-|Classification of Common Data Elements<br/><br/><br/><br/>|-- Marketing material<br>-- Public filings<br>-- Public web site material|-- Company goals and objectives<br>-- Macro financial data such as what is reported on our dashboard<br>--  Organizational charts<br>|-- Protected individually identifying information<br>-- data covered by PCI (bank account numbers, credit card numbers, etc)<br>-- Third party data elements protected by contract terms|
+|Classification of Common Data Elements|-- Marketing material<br>-- Public filings<br>-- Public web site material|-- Company goals and objectives<br>-- Macro financial data such as what is reported on our dashboard<br>--  Organizational charts<br>|-- Protected individually identifying information<br>-- data covered by PCI (bank account numbers, credit card numbers, etc)<br>-- Third party data elements protected by contract terms|
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
-|Access and Authentication Controls<br/><br/><br/><br/>|None|-- Information is restricted to management and authorized staff based on  supervisor approval.<br>-- Information is protected from external access.* |Information is restricted on a need-to-know basis<br>-- Role based access control<br>-- Systems presenting data must be password protected.<br>–- Formal approval by supervisor* |
+|Access and Authentication Controls|None|-- Information is restricted to management and authorized staff based on  supervisor approval.<br>-- Information is protected from external access.* |Information is restricted on a need-to-know basis<br>-- Role based access control<br>-- Systems presenting data must be password protected.<br>–- Formal approval by supervisor* |
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
-|Security Controls<br/><br/><br/><br/>|None|-- Encryption at rest<br>-- Systems protected from direct access by external systems via firewall* |-- End-to-end encryption<br>-- Systems protected from direct access by external systems via a firewall in the DMZ* |
+|Security Controls|None|-- Encryption at rest<br>-- Systems protected from direct access by external systems via firewall* |-- End-to-end encryption<br>-- Systems protected from direct access by external systems via a firewall in the DMZ* |
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
-|Transmission Controls<br/><br/><br/><br/>|None|Data at this level that is transmitted to external parties must be encrypted* |Data at this level must be encrypted (internal network or outside the Company network)* |
+|Transmission Controls|None|Data at this level that is transmitted to external parties must be encrypted* |Data at this level must be encrypted (internal network or outside the Company network)* |
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
-|Storage<br/><br/><br/><br/>|-- Plain text<br>-- Backup is recommended|-- Encryption at rest at disk/media level<br>-- Backup is required* |-- Encryption at rest at disk/media and file level<br>Encrypted backup at off-site storage is required* <br>-- Physical media must be reformatted before re-use* |
-
+|Storage|-- Plain text<br>-- Backup is recommended|-- Encryption at rest at disk/media level<br>-- Backup is required* |-- Encryption at rest at disk/media and file level<br>Encrypted backup at off-site storage is required* <br>-- Physical media must be reformatted before re-use* |
+<br/>
+<br/>
 \* Applies unless there is an approved exception or a waiver has been issued.
 
 <br/>
