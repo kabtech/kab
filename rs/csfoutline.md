@@ -9,6 +9,7 @@ title: CSF Outline
 #### Control Category: 0.0 - Information Security Management Program  
 - Objective Name: 0.01 Information Security Management Program  
     - Control Reference: 00.a Information Security Management Program  
+
 #### Control Category: 01.0 - Access Control  
 - Objective Name: 01.01 Business Requirement for Access Control  
     - Control Reference: 01.a Access Control Policy  
@@ -42,6 +43,7 @@ title: CSF Outline
 - Objective Name: 01.07 Mobile Computing and Teleworking  
     - Control Reference: 01.x Mobile Computing and Communications  
     - Control Reference: 01.y Teleworking  
+
 #### Control Category: 02.0 - Human Resources Security  
 - Objective Name: 02.01 Prior to Employment  
     - Control Reference: 02.a Roles and Responsibilities  
@@ -56,16 +58,19 @@ title: CSF Outline
     - Control Reference: 02.g Termination or Change Responsibilities  
     - Control Reference: 02.h Return of Assets  
     - Control Reference: 02.i Removal of Access Rights  
+
 #### Control Category: 03.0 - Risk Management  
 - Objective Name: 03.01 Risk Management Program  
     - Control Reference: 03.a Risk Management Program Development  
     - Control Reference: 03.b Performing Risk Assessments  
     - Control Reference: 03.c Risk Mitigation  
     - Control Reference: 03.d Risk Evaluation  
+
 #### Control Category: 04.0 - Security Policy  
 - Objective Name: 04.01 Information Security Policy  
     - Control Reference: 04.a Information Security Policy Document  
     - Control Reference: 04.b Review of the Information Security Policy  
+
 #### Control Category: 05.0 - Organization of Information Security  
 - Objective Name: 05.01 Internal Organization  
     - Control Reference: 05.a Management Commitment to Information Security  
@@ -80,6 +85,7 @@ title: CSF Outline
     - Control Reference: 05.i Identification of Risks Related to External Parties  
     - Control Reference: 05.j Addressing Security When Dealing with Customers  
     - Control Reference: 05.k Addressing Security in Third Party Agreements  
+
 #### Control Category: 06.0 - Compliance  
 - Objective Name: 06.01 Compliance with Legal Requirements  
     - Control Reference: 06.a Identification of Applicable Legislation  
@@ -94,6 +100,7 @@ title: CSF Outline
 - Objective Name: 06.03 Information System Audit Considerations  
     - Control Reference: 06.i Information Systems Audit Controls  
     - Control Reference: 06.j Protection of Information Systems Audit Tools  
+
 #### Control Category: 07.0 - Asset Management  
 - Objective Name: 07.01 Responsibility for Assets  
     - Control Reference: 07.a Inventory of Assets  
@@ -102,6 +109,7 @@ title: CSF Outline
 - Objective Name: 07.02 Information Classification  
     - Control Reference: 07.d Classification Guidelines  
     - Control Reference: 07.e Information Labeling and Handling  
+
 #### Control Category: 08.0 - Physical and Environmental Security  
 - Objective Name: 08.01 Secure Areas  
     - Control Reference: 08.a Physical Security Perimeter  
@@ -118,6 +126,7 @@ title: CSF Outline
     - Control Reference: 08.k Security of Equipment Off-Premises  
     - Control Reference: 08.l Secure Disposal or Re-Use of Equipment  
     - Control Reference: 08.m Removal of Property  
+
 #### Control Category: 09.0 - Communications and Operations Management  
 - Objective Name: 09.01 Documented Operating Procedures  
     - Control Reference: 09.a Documented Operations Procedures  
@@ -161,6 +170,7 @@ title: CSF Outline
     - Control Reference: 09.ad Administrator and Operator Logs  
     - Control Reference: 09.ae Fault Logging  
     - Control Reference: 09.af Clock Synchronization  
+
 #### Control Category: 10.0 - Information Systems Acquisition, Development, and Maintenance  
 - Objective Name: 10.01 Security Requirements of Information Systems  
     - Control Reference: 10.a Security Requirements Analysis and Specification  
@@ -181,6 +191,7 @@ title: CSF Outline
     - Control Reference: 10.l Outsourced Software Development  
 - Objective Name: 10.06 Technical Vulnerability Management  
     - Control Reference: 10.m Control of Technical Vulnerabilities  
+
 #### Control Category: 11.0 - Information Security Incident Management  
 - Objective Name: 11.01 Reporting Information Security Incidents and Weaknesses  
     - Control Reference: 11.a Reporting Information Security Events  
@@ -189,6 +200,7 @@ title: CSF Outline
     - Control Reference: 11.c Responsibilities and Procedures  
     - Control Reference: 11.d Learning from Information Security Incidents  
     - Control Reference: 11.e Collection of Evidence  
+
 #### Control Category: 12.0 - Business Continuity Management  
 - Objective Name: 12.01 Information Security Aspects of Business Continuity Management  
     - Control Reference: 12.a Including Information Security in the Business Continuity Management Process  
@@ -196,6 +208,7 @@ title: CSF Outline
     - Control Reference: 12.c Developing and Implementing Continuity Plans Including Information Security  
     - Control Reference: 12.d Business Continuity Planning Framework  
     - Control Reference: 12.e Testing, Maintaining and Re-Assessing Business Continuity Plans  
+
 #### Control Category: 13.0 - Privacy Practices  
 - Objective Name: 13.01 Openness and Transparency  
     - Control Reference: 13.a Notice of Privacy Practices  
