@@ -2,6 +2,7 @@
 layout: kab
 group: rs
 title: Classification Sample
+---
 
 The data classification system is based on the principle of least privilege. This principle stipulates that accounts have the least amount of privilege required to perform their business processes, or that information is not disclosed or assessible to any person who does not have a legitimate and demonstrable business need to receive the information. This principle in combination with the measures detailed in the matrix will protect the Company and its customers’ information from unauthorized disclosure, use, modification, and deletion. 
 ### Data Classification Matrix
