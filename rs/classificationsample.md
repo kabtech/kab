@@ -14,11 +14,11 @@ The data classification system is based on the principle of least privilege. Thi
 |Classification of Common Data Elements<br/><br/><br/><br/>|-- Marketing material<br>-- Public filings<br>-- Public web site material|-- Company goals and objectives<br>-- Macro financial data such as what is reported on our dashboard<br>--  Organizational charts<br>|-- Protected individually identifying information<br>-- data covered by PCI (bank account numbers, credit card numbers, etc)<br>-- Third party data elements protected by contract terms|
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Access and Authentication Controls<br/><br/><br/><br/>|None|-- Information is restricted to management and authorized staff based on  supervisor approval.<br>-- Information is protected from external access.* |Information is restricted on a need-to-know basis<br>-- Role based access control<br>-- Systems presenting data must be password protected.<br>–- Formal approval by supervisor* |
-|===|===|===|===|
+|<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Security Controls<br/><br/><br/><br/>|None|-- Encryption at rest<br>-- Systems protected from direct access by external systems via firewall* |-- End-to-end encryption<br>-- Systems protected from direct access by external systems via a firewall in the DMZ* |
-|===|===|===|===|
+|<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Transmission Controls<br/><br/><br/><br/>|None|Data at this level that is transmitted to external parties must be encrypted* |Data at this level must be encrypted (internal network or outside the Company network)* |
-|===|===|===|===|
+|<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Storage<br/><br/><br/><br/>|-- Plain text<br>-- Backup is recommended|-- Encryption at rest at disk/media level<br>-- Backup is required* |-- Encryption at rest at disk/media and file level<br>Encrypted backup at off-site storage is required* <br>-- Physical media must be reformatted before re-use* |
 
 \* Applies unless there is an approved exception or a waiver has been issued.
