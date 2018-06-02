@@ -9,10 +9,10 @@ The data classification system is based on the principle of least privilege. Thi
 
 ||Public|Proprietary|Confidential|
 |---|---|---|---|
-|Information Classification Guideline<br/><br/><br/><br/>|Information is not confidential and can be made public without any implications for Company. Loss of availability due to system downtime is an acceptable risk. Integrity is important but not vital.|Unauthorized access could influence the Company's operational effectiveness, cause meaningful financial loss, provide a significant gain to a competitor, or cause a substantial reduction in customer confidence.|Information which by regulation or contractual obligation must be secured from unauthorized exposure or only exposed upon obtaining written authorization.|
-|===|===|===|===|
+|Information Classification Guideline|Information is not confidential and can be made public without any implications for Company. Loss of availability due to system downtime is an acceptable risk. Integrity is important but not vital.|Unauthorized access could influence the Company's operational effectiveness, cause meaningful financial loss, provide a significant gain to a competitor, or cause a substantial reduction in customer confidence.|Information which by regulation or contractual obligation must be secured from unauthorized exposure or only exposed upon obtaining written authorization.|
+|<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Classification of Common Data Elements<br/><br/><br/><br/>|-- Marketing material<br>-- Public filings<br>-- Public web site material|-- Company goals and objectives<br>-- Macro financial data such as what is reported on our dashboard<br>--  Organizational charts<br>|-- Protected individually identifying information<br>-- data covered by PCI (bank account numbers, credit card numbers, etc)<br>-- Third party data elements protected by contract terms|
-|===|===|===|===|
+|<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Access and Authentication Controls<br/><br/><br/><br/>|None|-- Information is restricted to management and authorized staff based on  supervisor approval.<br>-- Information is protected from external access.* |Information is restricted on a need-to-know basis<br>-- Role based access control<br>-- Systems presenting data must be password protected.<br>–- Formal approval by supervisor* |
 |===|===|===|===|
 |Security Controls<br/><br/><br/><br/>|None|-- Encryption at rest<br>-- Systems protected from direct access by external systems via firewall* |-- End-to-end encryption<br>-- Systems protected from direct access by external systems via a firewall in the DMZ* |
