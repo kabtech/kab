@@ -20,6 +20,7 @@ The data classification system is based on the principle of least privilege. Thi
 |Transmission Controls|None|Data at this level that is transmitted to external parties must be encrypted* |Data at this level must be encrypted (internal network or outside the Company network)* |
 |<br/><br/>|<br/><br/>|<br/><br/>|<br/><br/>|
 |Storage|-- Plain text<br>-- Backup is recommended|-- Encryption at rest at disk/media level<br>-- Backup is required* |-- Encryption at rest at disk/media and file level<br>Encrypted backup at off-site storage is required* <br>-- Physical media must be reformatted before re-use* |
+
 <br/>
 <br/>
 \* Applies unless there is an approved exception or a waiver has been issued.
