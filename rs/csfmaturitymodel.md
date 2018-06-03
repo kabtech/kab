@@ -5,6 +5,10 @@ title: CSF Maturity Model
 ---
 ### CSF Maturity Model
 
+There are five assessment domains/areas as immediately follows. Further below I provide the corresponding high-level assessment matrix.
+
+___
+
 **Policy (25%)**
 - Do formal, up-to-date policies or standards exist that contain “shall” or “will” statements for each element of the requirement statement?
 - Do the policies and standards that exist for each element of the requirement statement cover all major facilities and operations for the organizations and/or systems/assets in scope for the assessment?
@@ -29,6 +33,8 @@ title: CSF Maturity Model
 - Are effective corrective actions taken to address identified weaknesses in the elements of the requirements statement, including those identified as a result of potential or actual information security incidents or through information security alerts?
 - Do decisions around corrective actions consider cost, risk, and mission impact?
 - Are threats impacting the requirements periodically re-evaluated and the requirements adapted as needed?
+
+___
 
 #### Evaulation Matrix View of Maturity Model
 
