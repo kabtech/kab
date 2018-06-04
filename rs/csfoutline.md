@@ -225,6 +225,9 @@ title: CSF Outline
     - Control Reference: 13.i. Required Uses and Disclosures  
     - Control Reference: 13.j. Permitted Uses and Disclosures  
     - Control Reference: 13.k. Prohibited or Restricted Uses and
+
+[More](../get/HITRUST_CSF_v8_1.pdf)
+
 <br/>
 <br/>
 
