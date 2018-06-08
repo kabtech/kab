@@ -17,6 +17,9 @@ change the group type to 'Distribution'. Doing so leaves the group's SID and GUI
 dsacls "\\beta.fubar.com\CN=Blanston\, Gern,OU=Test,OU=BetaUsers,OU=_Beta,DC=beta,DC=fubar,DC=com" /G beta\gblanston:RPWP;gidNumber;
 ```
 
+#### Configure granular delegation to allow a user to perform replication synchronization
+https://social.technet.microsoft.com/wiki/contents/articles/21565.active-directory-delegate-replication-rights-to-non-admins.aspx
+
 
 <br/>
 <br/>
