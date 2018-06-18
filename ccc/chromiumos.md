@@ -32,6 +32,10 @@ cat /sys/devices/platform/applesmc.768/light
 With this information one can make a script that, periodically, checks the environment and automatically decide if the backlight must be turned on or not.
 ```
 
+Converting Chromebook firmware back to legacy BIOS  
+https://mrchromebox.tech/#fwscript
+
+
 Using crouton to chroot a different install of linux:
 ```
 https://chriswells.io/blog/view/chromebook-for-power-users-part-2
