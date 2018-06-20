@@ -72,7 +72,7 @@ Certbot manual guidance
 https://community.letsencrypt.org/t/question-about-correct-way-to-obtain-certificate-using-certonly/20726
 ```
 
-Combine key and pem files into a pkcs12 (pfx/p12) file (can include certs in chain)
+Combine key and pem files into a pkcs12 (pfx/p12) file (can include certs in chain, or you can purposefully omit)
 ```
 openssl pkcs12 -export -out fubar.p12 -inkey fubar.key -in fubar_com.pem -certfile DigiCert_SHA2_Secure_Server_CA.pem -certfile DigiCert_Global_Root_CA.pem
 ```
