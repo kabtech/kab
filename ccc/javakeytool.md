@@ -39,5 +39,10 @@ certreq -submit -attrib "CertificateTemplate:DHPWebServer" fubar2.csr fubar2.cer
 keytool -import -trustcacerts -alias fubar2.fubar.com -file fubar2.p7b -keystore fubar2.jks
 ```
 
+Generate a jks keystore from a pkcs12 keystore
+```
+keytool -importkeystore -srckeystore source.p12 -srcstoretype pkcs12 -destkeystore dest.jks -deststoretype JKS
+```
+
 <br/>
 <br/>
