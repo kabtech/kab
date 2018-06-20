@@ -20,6 +20,11 @@ Export a the certificate from a keystore in Base64-encoded format (pem)
 keytool -export -alias alias_name -keystore path_to_keystore_file -rfc -file path_to_certificate_file
 ```
 
+Export the key from a JKS keystore to a pkcs12 file
+```
+keytool -importkeystore -srckeystore source.jks -destkeystore desk.pkcs -srcstoretype JKS -deststoretype PKCS12
+```
+
 Create a new keytool-based truststore:
 ```
 #import the certs as follows, command will wait for you to paste cert (standard input)
