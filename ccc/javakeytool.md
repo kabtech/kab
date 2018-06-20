@@ -15,6 +15,10 @@ Generate certificate keystore with subject alternative name attributes:
 keytool -genkey -alias fubar1.a.com -keyalg RSA -keysize 2048 -keystore fubar1.jks -ext SAN=dns:fubar1.a.com,dns:fubar1,dns:FUBAR1.A.COM,dns:FUBAR1
 #NOTE must use the same -ext attribute when generating the CSR.
 ```
+Export a the certificate from a keystore in Base64-encoded format (pem)
+```
+keytool -export -alias alias_name -keystore path_to_keystore_file -rfc -file path_to_certificate_file
+```
 
 Create a new keytool-based truststore:
 ```
