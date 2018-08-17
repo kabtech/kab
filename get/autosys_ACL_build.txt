@@ -1,0 +1,118 @@
+. "\\dhpsec\scripts$\kab_functions\kab_fn_Get-DateString.ps1"
+
+#Source list of the exclusion jobs and boxes
+#created by dumping contents of ServiceNow KB articles 'AutoSys Exclusion List: UATX' and 'AutoSys Exclusion List: INTX'
+#into strFileName below.
+#Generates XML access policy file for import into Autosys EEM
+$strFileName = "C:\Users\kbestu\workspace\DataSamples\AutosysJobExclusionListINTXandUATX.txt"
+$strDateStamp = Get-DateString
+$strFile = "C:\Users\kbestu\workspace\output\autosys_acl_build_" + $strDateStamp + ".xml"
+#add-content $strFile $strLine
+
+
+#WRITE BEGINNING TAGS==========================================================
+$strAppend = @"
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<Safex>
+<Attach label="WorkloadAutomationAE"/>
+<Add>
+</Add>
+<AddOrModify>
+	<Policy folder="/" name="INTX_UATX_excludes">
+		<Description>Explicit deny for write, create, delete, and execute to limit all users other than EPS Team to only reading this set of critical/protected jobs.</Description>
+		<ResourceClassName>as-job</ResourceClassName>
+		<PolicyType>acl</PolicyType>
+		<Disabled>False</Disabled>
+		<ExplicitDeny>True</ExplicitDeny>
+		<PreDeployment>False</PreDeployment>
+		<RegexCompare>True</RegexCompare>
+"@
+add-content $strFile $strAppend
+clear-variable strAppend
+
+#DERIVE AND WRITE RESOURCE TAGS================================================
+$objStreamReader = new-object System.IO.StreamReader($strFileName)
+while (($objLine = $objStreamReader.ReadLine()) -ne $null) 
+{
+  $strLine = ([string]$objLine).trim()
+  if($strLine.length -gt 0)
+  {
+    $strLine
+    #<Resource>DEV.*TDM_..TX_._SBL_STG_ORG_EXT_XM</Resource>
+    #ADI_INTX_O_TIB_STOPPICKUP
+    $strAppend = "`t`t`t<Resource>DEV.*" + $strLine + "</Resource>"
+    add-content $strFile $strAppend
+    clear-variable strAppend
+  }
+  clear-variable strLine
+}
+$objStreamReader.close()
+$objStreamReader.dispose()
+
+#WRITE STATIC ACTION TAGS======================================================
+$strAppend = @"
+			<Action>delete</Action>
+			<Action>write</Action>
+			<Action>execute</Action>
+			<Action>create</Action>
+"@
+add-content $strFile $strAppend
+clear-variable strAppend
+
+#DERIVE AND WRITE FILTER TAGS==================================================
+$objStreamReader = new-object System.IO.StreamReader($strFileName)
+while (($objLine = $objStreamReader.ReadLine()) -ne $null) 
+{
+  $strLine = ([string]$objLine).trim()
+  if($strLine.length -gt 0)
+  {
+    #<Filter logic="OR" lparens="1" col="req:resource" optype="STRING" oper="MATCH" val="val:DEV.*ADI_..TX_._ADM_C...*" rparens="0" tag="DEV.*ADI_..TX_._ADM_C...*" />
+    #<Filter logic="AND" lparens="0" col="req:action" optype="STRING" oper="WITHINSET" val="val:write,create,delete,execute" rparens="0" tag="DEV.*ADI_..TX_._ADM_C...*" />
+    #<Filter logic="AND" lparens="0" col="gug:PrincipalName" optype="STRING" oper="NEQ" val="val:S_AppAutosysTST_GLBL_ASYS_ADMIN" rparens="1" tag="DEV.*ADI_..TX_._ADM_C...*" />
+    $strMatchVal = "DEV.*" + $strLine
+    $strAppend = "`t`t" + '<Filter logic="OR" lparens="1" col="req:resource" optype="STRING" oper="MATCH" val="val:' + $strMatchVal + '" rparens="0" tag="' + $strMatchVal + '" />'
+    add-content $strFile $strAppend
+    clear-variable strAppend
+    $strAppend = "`t`t" + '<Filter logic="AND" lparens="0" col="req:action" optype="STRING" oper="WITHINSET" val="val:write,create,delete,execute" rparens="0" tag="' + $strMatchVal + '" />'
+    add-content $strFile $strAppend
+    clear-variable strAppend
+    $strAppend = "`t`t" + '<Filter logic="AND" lparens="0" col="gug:PrincipalName" optype="STRING" oper="NEQ" val="val:S_AppAutosysTST_GLBL_ASYS_ADMIN" rparens="1" tag="' + $strMatchVal + '" />'
+    add-content $strFile $strAppend
+    clear-variable strAppend,strMatchVal
+  }
+  clear-variable strLine
+}
+clear-variable strFileName
+$objStreamReader.close()
+$objStreamReader.dispose()
+
+#WRITE END TAGS================================================================
+$strAppend = @"
+	</Policy>
+	<Policy folder="/" name="TEST-EXCLUDE">
+		<ResourceClassName>as-job</ResourceClassName>
+		<PolicyType>acl</PolicyType>
+		<Disabled>True</Disabled>
+		<ExplicitDeny>True</ExplicitDeny>
+		<PreDeployment>False</PreDeployment>
+		<RegexCompare>True</RegexCompare>
+			<Resource>DEV.*ADI_..TX_._AS_IDCARDS_FTP.*</Resource>
+			<Action>read</Action>
+			<Action>execute</Action>
+			<Action>write</Action>
+			<Action>create</Action>
+			<Action>delete</Action>
+		<Filter logic="OR" lparens="1" col="req:resource" optype="STRING" oper="MATCH" val="val:DEV.*ADI_..TX_._AS_IDCARDS_FTP.*" rparens="0" tag="DEV.*ADI_..TX_._AS_IDCARDS_FTP.*" />
+		<Filter logic="AND" lparens="0" col="req:action" optype="STRING" oper="WITHINSET" val="val:read,write,create,delete,execute" rparens="0" tag="DEV.*ADI_..TX_._AS_IDCARDS_FTP.*" />
+		<Filter logic="AND" lparens="0" col="gug:PrincipalName" optype="STRING" oper="NEQ" val="val:S_AppAutosysTST_GLBL_ASYS_ADMIN" rparens="1" tag="DEV.*ADI_..TX_._AS_IDCARDS_FTP.*" />
+	</Policy>
+</AddOrModify>
+<Add>
+</Add>
+</Safex>
+"@
+add-content $strFile $strAppend
+clear-variable strAppend
+
+
+
