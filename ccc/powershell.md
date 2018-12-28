@@ -19,6 +19,11 @@ catch{$intLocked = 1}
 ```
 
 
+#### Use Invoke-Command to run command on the remote server instead local host | sends command across the wire for the remote server to execute. NOTE use of 'using:' scope notation to embed a local varible into the script block:
+```
+$objMailbox = invoke-command -session (get-pssession) -scriptblock {get-mailbox $using:strUser -ea silentlycontinue| select-object -property PrimarySMTPAddress}
+```
+
 <br/>
 <br/>
 <br/>
