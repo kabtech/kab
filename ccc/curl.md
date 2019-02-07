@@ -1,6 +1,6 @@
 ---
 layout: kab
-title: curl
+title: Curl
 group: ccc
 ---
 
