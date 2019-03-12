@@ -41,6 +41,15 @@ gpg -a --export <keyid>
 #private
 gpg --export-secret-key -a <keyid>
 ```
+#### Import a private key and mark trust as Ultimate:
+```
+gpg --import asciiarmoredprivatekey.asc
+#for above, you will be prompted for the key passphrase
+gpg --edit-key <keyid> trust quit
+#above will invoke interactive prompt for changing trust level
+#choose '5 = I trust ultimately', after which you will be prompted to confirm decision
+
+```
 
 #### NOTE that gpg is capable of supporting symmetric encryption:
 ```
