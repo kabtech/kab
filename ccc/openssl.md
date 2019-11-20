@@ -90,6 +90,10 @@ openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
 Run the following command to remove the passphrase from the private key: 
 openssl rsa -in key.pem -out server.key
 ```
+Use windows certreq to submit certificate signing request to internal CA:
+```
+certreq -submit -attrib "certificatetemplate:NameOfTemplate" CSRfilename.csr desiredcertfilename.cer
+```
 
 Transform .pfx file generated and exported from mmc to separate private key and certificate pem files that can be used by gitlab:
 ```
