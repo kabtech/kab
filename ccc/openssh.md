@@ -41,7 +41,7 @@ ssh-keygen.exe -e -f kab3.pub
 ```
 If the key is generated with a passphrase, the passphrase will be requested by the client when you go to login
 
-List the fingerprint of a previously-generated private or public key:
+#### List the fingerprint of a previously-generated private or public key:
 ```
 #to use md5 for the hashing function:
 ssh-keygen -E md5 -lf keyfilepath
@@ -51,13 +51,14 @@ ssh-keygen -lf keyfilepath
 ssh-keygen -E sha1 -lf keyfilepath
 ```
 
-
-
-Regarding RoboFTP SSH key support
+#### Regarding RoboFTP SSH key support
 
 The key export function exports keys in the openSSH format * in many cases you will need to export to IETF format to make importable
 
-https://wiki.archlinux.org/index.php/SSH_Keys SSH keys always come in pairs, one private and the other public. The private key is known only to you and it should be safely guarded. By contrast, the public key can be shared freely with any SSH server to which you would like to connect.
+#### Good SSH keys fundamentals info
+
+https://wiki.archlinux.org/index.php/SSH_Keys 
+SSH keys always come in pairs, one private and the other public. The private key is known only to you and it should be safely guarded. By contrast, the public key can be shared freely with any SSH server to which you would like to connect.
 
 When an SSH server has your public key on file and sees you requesting a connection, it uses your public key to construct and send you a challenge. This challenge is like a coded message and it must be met with the appropriate response before the server will grant you access. What makes this coded message particularly secure is that it can only be understood by someone with the private key. While the public key can be used to encrypt the message, it cannot be used to decrypt that very same message. Only you, the holder of the private key, will be able to correctly understand the challenge and produce the correct response.
 
