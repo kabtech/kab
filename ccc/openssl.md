@@ -6,14 +6,14 @@ title: OpenSSL
 
 ### OpenSSL
 
-Generate new keystore and a corresponding certificate signing request:
+#### Generate new keystore and a corresponding certificate signing request:
 ```
 openssl req -newkey rsa:2048 -keyout yourname.key -out yourname.csr
 #depending on the default of your openssl, you may have to use the following to suppress des3 encryption of the private key
 openssl req -nodes -newkey rsa:2048 -keyout yourname.key -out yourname.csr
 ```
 
-Create a new keystore -- with passphrase -- and csr including SAN using a conf file:
+#### Create a new keystore -- with passphrase -- and csr including SAN using a conf file:
 ```
 #Create conf file in this format:
 [ req ]
@@ -41,12 +41,12 @@ openssl req -new -passout pass:"Pomegranate" -nodes -newkey rsa:2048 -config fub
 
 ```
 
-Remove passphrase from a passphrase protected key (you will be challenged for the passphrase):
-
+#### Remove passphrase from a passphrase protected key (you will be challenged for the passphrase):
 ```
 openssl rsa -in www.key -out new.key
 ```
-Retrieve certificate chain presented by a site:
+
+#### Retrieve certificate chain presented by a site:
 ```
 openssl s_client -starttls ftp -showcerts -connect fubar1.fubar.com:21 #where -starttls protocol is limited to smtp, pop3, imap, ftp, and xmpp
 
@@ -64,22 +64,22 @@ openssl s_client -showcerts -connect fubarserver:5250 2>/dev/null | openssl x509
 
 ```
 
-Just send the text-based details of a given base64 encoded certificate file to the screen:
+#### Just send the text-based details of a given base64 encoded certificate file to the screen:
 ```
 openssl x509 -in fubar.cer -noout -text
 ```
 
-Certbot manual guidance
+#### Certbot manual guidance
 ```
 https://community.letsencrypt.org/t/question-about-correct-way-to-obtain-certificate-using-certonly/20726
 ```
 
-Combine key and pem files into a pkcs12 (pfx/p12) file (can include certs in chain, or you can purposefully omit)
+#### Combine key and pem files into a pkcs12 (pfx/p12) file (can include certs in chain, or you can purposefully omit)
 ```
 openssl pkcs12 -export -out fubar.p12 -inkey fubar.key -in fubar_com.pem -certfile DigiCert_SHA2_Secure_Server_CA.pem -certfile DigiCert_Global_Root_CA.pem
 ```
 
-Extracting Certificate and Private Key Files from a .pfx File
+#### Extracting Certificate and Private Key Files from a .pfx File
 ```
 Run the following command to export the private key: 
 openssl pkcs12 -in certname.pfx -nocerts -out key.pem -nodes
@@ -90,12 +90,13 @@ openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
 Run the following command to remove the passphrase from the private key: 
 openssl rsa -in key.pem -out server.key
 ```
-Use windows certreq to submit certificate signing request to internal CA:
+
+#### Use windows certreq to submit certificate signing request to internal CA:
 ```
 certreq -submit -attrib "certificatetemplate:NameOfTemplate" CSRfilename.csr desiredcertfilename.cer
 ```
 
-Transform .pfx file generated and exported from mmc to separate private key and certificate pem files that can be used by gitlab:
+#### Transform .pfx file generated and exported from mmc to separate private key and certificate pem files that can be used by gitlab:
 ```
 #use mmc to create cert, being sure to set it to allow private key export (results in .pfx file)
 #transport .pfx file to linux server
