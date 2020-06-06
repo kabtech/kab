@@ -12,6 +12,14 @@ $arrList = @();while (!$strStop){$arrList += read-host "Next entry:"}
 #Or...use a construct like this if you want to be able to signal to a running script that you are done pasting entries:
 $arrList = @();while ($arrList -notcontains "swordfish"){$arrList += read-host "Paste list or type 'swordfish' to indicate paste is done"}
 ```
+
+### Convert BASE64 encoded string of a file back to its original binary file type
+```
+$strEncodedFilePath = "C:\yourpath\base64encodedpdf.pem"
+$strDecodedFilePath = "C:\yourpath\restoredusablepdf.pdf"
+[System.Convert]::FromBase64String((Get-Content $strEncodedFilePath)) | Set-Content $strDecodedFilePath -Encoding Byte
+```
+
 #### Check if file is locked - the following construct can be used so that $intLocked is an indicator whether you may access a file to write:
 ```
 try { [IO.File]::OpenWrite($FilePath).close();$intLocked = 0}
