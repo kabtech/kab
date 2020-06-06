@@ -13,7 +13,7 @@ $arrList = @();while (!$strStop){$arrList += read-host "Next entry:"}
 $arrList = @();while ($arrList -notcontains "swordfish"){$arrList += read-host "Paste list or type 'swordfish' to indicate paste is done"}
 ```
 
-### Convert BASE64 encoded string of a file back to its original binary file type
+#### Convert BASE64 encoded string of a file back to its original binary file type
 ```
 $strEncodedFilePath = "C:\yourpath\base64encodedpdf.pem"
 $strDecodedFilePath = "C:\yourpath\restoredusablepdf.pdf"
