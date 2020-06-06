@@ -172,13 +172,13 @@ HostName                  RecordType Timestamp            TimeToLive      Record
 ```
 #msExchRecipientTypeDetails=128 #mail-enabled user
 #msExchRecipientTypeDetails=1 #user mailbox
-get-aduser -id kbestu -properties emailaddress,targetAddress,msExchRecipientTypeDetails,msRTCSIP-PrimaryUserAddress,msRTCSIP-UserEnabled
+get-aduser -id gblanston -properties emailaddress,targetAddress,msExchRecipientTypeDetails,msRTCSIP-PrimaryUserAddress,msRTCSIP-UserEnabled
 #DHP object (mailuser pointing to DS object):
 #msExchRecipientTypeDetails : 128
-#targetAddress              : SMTP:Kurt_Bestul@ssmhc.com (secondary SMTP address on DS object)
+#targetAddress              : SMTP:Gern_Blanston@fubar.com (secondary SMTP address on DS object)
 #DS object (mailbox-enabled user):
 #msExchRecipientTypeDetails : 1
-#msRTCSIP-PrimaryUserAddress : sip:Kurt.Bestul@ssmhc.com
+#msRTCSIP-PrimaryUserAddress : sip:Gern.Blanston@fubar.com
 #msRTCSIP-UserEnabled        : True
 ```
 
