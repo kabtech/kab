@@ -11,7 +11,7 @@ I think of the Atomic Pi as a great value, but with an extremely touch side. Som
 - System power quirks: if you have the above powered USB hub attached and switch off the primary system power, the system may remain running.
 
 
-Some steps after the install is completd:
+Some steps after the install is completed:
 ```
 #Install latest 'light' Debian from bootable USB flash drive
 #If you want to install a desktop, wait to install it until after you have completed the initial system install
