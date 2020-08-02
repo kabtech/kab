@@ -5,7 +5,7 @@ group: bdn
 ---
 ### Atomic Pi basic Debian setup
 
-I think of the Atomic Pi as a great value, but with an extremely touch side. Some notes about the system itself:
+I think of the Atomic Pi as a great value, but with an extremely touchy side. Some notes about the system itself:
 - The CMOS reset button is way to easy to accidentally push. DON'T
 - Must use POWERED USB hub. You will get inconsistent USB device behavior if you don't, including no recognition of bootable flash drive.
 - System power quirks: if you have the above powered USB hub attached and switch off the primary system power, the system may remain running.
