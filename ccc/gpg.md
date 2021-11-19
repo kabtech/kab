@@ -40,6 +40,8 @@ gpg -a --export "keyid" | gpg --list-packets --verbose
 gpg -a --export <keyid>
 #private
 gpg --export-secret-key -a <keyid>
+#NOTE when using multiple "homedir"s for key generation and administration, gpg-agent may cache passphrases such that when you try to export keys it is basically ignoring the key that you are trying to paste in response to a prompt (using the wrong value that it has cached instead). To fix that in Ubuntu, do the following (clears the cache):
+gpgconf --reload gpg-agent
 ```
 #### Import a private key and mark trust as Ultimate:
 ```
